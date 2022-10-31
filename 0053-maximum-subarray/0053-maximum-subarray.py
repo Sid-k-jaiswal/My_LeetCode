@@ -1,9 +1,6 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         n = len(nums)
-        if n == 1:
-            return nums[0]
-        
         #1st approach
 #         max = -100000
 #         sum = 0
