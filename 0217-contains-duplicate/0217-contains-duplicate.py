@@ -14,8 +14,14 @@ class Solution:
         
         #one liner:
         
-        return False if len(nums) == len(set(nums)) else True
+        #return False if len(nums) == len(set(nums)) else True
     
         #2nd approach:-
+        nums.sort()
         
+        for i in range(len(nums)-1):
+            if nums[i] == nums[i+1]:
+                return True
+        
+        return False
         
