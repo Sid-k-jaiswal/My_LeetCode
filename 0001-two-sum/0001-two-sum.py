@@ -8,7 +8,7 @@ class Solution:
         for i in range(n):
             sum = target-nums[i]
             if sum in my_dict:
-                return [nums.index(sum),i]
+                return [my_dict[sum],i]
             my_dict[nums[i]] = i
 
 # i = 0, d = {3:0}
