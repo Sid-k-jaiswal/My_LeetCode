@@ -1,12 +1,11 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         #approach 1
-        n = len(nums)
         
         my_dict = {}
         
         for i, value in enumerate(nums):
-            sum = target-value
+            sum = target-nums[i]
             if sum in my_dict:
                 return [my_dict[sum],i]
             my_dict[value] = i
