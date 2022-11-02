@@ -3,11 +3,13 @@ class Solution:
         
         nums3 = []
         
+        #approach 1
         for i in nums1:
             if i in nums2:
                 nums3.append(i)
                 nums2.remove(i)
                 
+        #approach 2     
 #         nums1.sort()
 #         nums2.sort()
 #         n = len(nums1)
