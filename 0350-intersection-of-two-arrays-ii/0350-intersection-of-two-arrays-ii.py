@@ -4,16 +4,11 @@ class Solution:
         nums3 = []
         
         #approach 1
-        
         count = [0]* 1001
-        
         for i in nums1:
-            count[i] += 1
-            
+            count[i] += 1    
         #or
         # count = Counter(nums1)
-        
-        
         
         for i in nums2:
             if count[i] > 0:
