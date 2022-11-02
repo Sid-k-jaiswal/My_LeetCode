@@ -4,12 +4,24 @@ class Solution:
         nums3 = []
         
         #approach 1
+        
+        count = [0]* 1001
+        
         for i in nums1:
-            if i in nums2:
+            count[i] += 1
+        
+        for i in nums2:
+            if count[i] > 0:
                 nums3.append(i)
-                nums2.remove(i)
+                count[i] -= 1
+            
+        #approach 2
+        # for i in nums1:
+        #     if i in nums2:
+        #         nums3.append(i)
+        #         nums2.remove(i)
                 
-        #approach 2     
+        #approach 3     
 #         nums1.sort()
 #         nums2.sort()
 #         n = len(nums1)
