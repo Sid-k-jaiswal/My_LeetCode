@@ -8,7 +8,7 @@ class Solution:
             if prices[sell] > buy:
                 profit = max(profit,prices[sell]-buy)
             else:
-                buy = min(buy,prices[sell])
+                buy = prices[sell]
         
         return profit
         
