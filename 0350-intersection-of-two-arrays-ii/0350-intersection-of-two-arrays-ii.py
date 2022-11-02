@@ -5,13 +5,13 @@ class Solution:
         
         #approach 1
         
-#         count = [0]* 1001
+        count = [0]* 1001
         
-#         for i in nums1:
-#             count[i] += 1
+        for i in nums1:
+            count[i] += 1
             
         #or
-        count = Counter(nums1)
+        # count = Counter(nums1)
         
         
         
