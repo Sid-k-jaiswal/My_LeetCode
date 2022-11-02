@@ -6,6 +6,7 @@ class Solution:
         
         for sell in range(1,len(prices)):
             if prices[sell] > buy:
+                # profit = profit if 
                 profit = max(profit,prices[sell]-buy)
             else:
                 buy = prices[sell]
